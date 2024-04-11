@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 struct ElementType {
 	unsigned long ID;
 	char *name;
@@ -15,7 +15,7 @@ typedef struct Node *Position;
 
 Position insert(struct ElementType e, Position p){	
 	Position newItem;
-	newItem = malloc(sizeof(struct Node));
+	newItem = (Node*)malloc(sizeof(struct Node));
 	newItem->value = e;
 	
 	newItem->next = p->next;
@@ -44,7 +44,7 @@ Position find(List pL, unsigned long ID) {
 }
 
 List createList() {
-	List headerNode = malloc(sizeof(struct Node));
+	List headerNode = (Node*)malloc(sizeof(struct Node));
 	headerNode->next = NULL;
 	return headerNode;
 }
