@@ -26,9 +26,9 @@ int main()
 	twoSym.name = "two"; twoSym.val = 2;
 	threeSym.name = "three"; threeSym.val = 3;
 	
-	nodeA =  (Node*)malloc(sizeof(struct Node));
-	nodeB =  (Node*)malloc(sizeof(struct Node));
-	nodeC =  (Node*)malloc(sizeof(struct Node));
+	nodeA =  malloc(sizeof(struct Node));
+	nodeB =  malloc(sizeof(struct Node));
+	nodeC =  malloc(sizeof(struct Node));
 	
 	nodeA->next = nodeB; nodeA->element = &oneSym;
 	nodeB->next = nodeC; nodeB->element = &twoSym;

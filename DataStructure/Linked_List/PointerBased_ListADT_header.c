@@ -8,7 +8,6 @@ struct ElementType {
 struct Node {
 	struct ElementType value;
 	struct Node *next;
-	struct Node *prev;
 };
 
 typedef struct Node *List;
@@ -16,14 +15,11 @@ typedef struct Node *Position;
 
 Position insert(struct ElementType e, Position p){	
 	Position newItem;
-	newItem = (Node*)malloc(sizeof(struct Node));
+	newItem = malloc(sizeof(struct Node));
 	newItem->value = e;
 	
 	newItem->next = p->next;
-	newItem->prev = p;
 	p->next = newItem;
-	if (newItem->next!=NULL)
-		newItem->next->prev = newItem;
 	
 	return newItem;
 }
@@ -47,15 +43,8 @@ Position find(List pL, unsigned long ID) {
 	return pL;
 }
 
-void Delete(Position p) {
-	p->prev->next = p->next;
-	if (p->next!=NULL)
-		p->next->prev = p->prev;
-	free(p);
-}
-
 List createList() {
-	List headerNode = (Node*)malloc(sizeof(struct Node));
+	List headerNode = malloc(sizeof(struct Node));
 	headerNode->next = NULL;
 	return headerNode;
 }
@@ -83,8 +72,5 @@ int main()
 		printf("Found!!!  ID: %ld         Name:%s\n",p->value.ID,p->value.name);
 	else
 		printf("Not Found!!!");
-	Delete(p);
-	printf("After deleted!!!\n");
-	display(pL);
 	return 0;
 }

@@ -16,6 +16,7 @@ struct _ListInfo {
 	unsigned long max_size;
 	Student list;
 };
+
 typedef struct _ListInfo *StudentList;
 
 void Insert(StudentList L, Student e, Position p) {
