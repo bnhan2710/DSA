@@ -59,10 +59,10 @@ void mult_polynomial(POLYNOMIAL poly1, POLYNOMIAL poly2, POLYNOMIAL poly_prod){
 }
 
 int main(){
-	POLYNOMIAL poly1 = (polynomial*)malloc(sizeof(struct polynomial));
-	POLYNOMIAL poly2 = (polynomial*)malloc(sizeof(struct polynomial));	
-	POLYNOMIAL poly_sum = (polynomial*)malloc(sizeof(struct polynomial));
-	POLYNOMIAL poly_prod = (polynomial*)malloc(sizeof(struct polynomial));
+	POLYNOMIAL poly1 = malloc(sizeof(struct polynomial));
+	POLYNOMIAL poly2 = malloc(sizeof(struct polynomial));	
+	POLYNOMIAL poly_sum = malloc(sizeof(struct polynomial));
+	POLYNOMIAL poly_prod = malloc(sizeof(struct polynomial));
 	
 	zero_polynomial(poly1);
 	zero_polynomial(poly2);
