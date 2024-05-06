@@ -76,7 +76,7 @@ int main() {
 	push(S,v1);push(S,v2);push(S,v3);push(S,v4);
 	show_stack(S);
 	pop(S);pop(S);
-	
+	show_stack(S);
 	StackNode node = top(S);
 	printf("Value of the top node is:%ld",node->value.v);
 	return 0;

@@ -13,6 +13,13 @@ struct Node {
 typedef struct Node *List;
 typedef struct Node *Position;
 
+
+List createList() {
+	List headerNode = malloc(sizeof(struct Node));
+	headerNode->next = NULL;
+	return headerNode;
+}
+
 Position insert(struct ElementType e, Position p){	
 	Position newItem;
 	newItem = malloc(sizeof(struct Node));
@@ -43,11 +50,7 @@ Position find(List pL, unsigned long ID) {
 	return pL;
 }
 
-List createList() {
-	List headerNode = malloc(sizeof(struct Node));
-	headerNode->next = NULL;
-	return headerNode;
-}
+
 
 int main()
 {

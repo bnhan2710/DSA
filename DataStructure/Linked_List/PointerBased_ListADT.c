@@ -15,7 +15,7 @@ typedef struct Node *Position;
 
 Position Insert(List *pL , struct ElementType e, Position p){
     Position newItem;
-    newItem = (Position)malloc(sizeof(struct Node));
+    newItem = malloc(sizeof(struct Node));
     newItem->value = e;
     if (*pL == NULL || p == NULL){
         newItem->next = *pL;

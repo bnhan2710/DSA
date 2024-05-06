@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/src__code/DataStructureandAlgorithm/DataStructure/Linked_List",
-      "program": "c:/src__code/DataStructureandAlgorithm/DataStructure/Linked_List/build/Debug/outDebug",
+      "cwd": "c:/src__code/DataStructureandAlgorithm/DataStructure/Stack_Queues",
+      "program": "c:/src__code/DataStructureandAlgorithm/DataStructure/Stack_Queues/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
