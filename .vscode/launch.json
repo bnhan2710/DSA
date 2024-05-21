@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/src__code/DataStructureandAlgorithm/DataStructure/Stack_Queues",
-      "program": "c:/src__code/DataStructureandAlgorithm/DataStructure/Stack_Queues/build/Debug/outDebug",
+      "cwd": "d:/source-code/C,C++/DataStructureandAlgorithm/Algorithm/Shortes_Path/Travelling_salesman/Br",
+      "program": "d:/source-code/C,C++/DataStructureandAlgorithm/Algorithm/Shortes_Path/Travelling_salesman/Br/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
